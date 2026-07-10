@@ -1,0 +1,107 @@
+/* Day page additions — extends shared.css */
+
+.day-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(5,4,2,0.6);
+  border-bottom: 1px solid rgba(201,168,79,0.12);
+  position: relative;
+  z-index: 1;
+}
+
+.day-progress-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: #C9A84F;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.day-progress-track {
+  flex: 1;
+  max-width: 200px;
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.day-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, rgba(201,168,79,0.4), #C9A84F);
+  border-radius: 100px;
+  transition: width 0.4s ease;
+}
+
+.day-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 52px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(201,168,79,0.18);
+  gap: 12px;
+}
+
+.day-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid rgba(201,168,79,0.25);
+  color: #B8AFA4;
+  background: rgba(18,15,10,0.72);
+  backdrop-filter: blur(8px);
+  font-family: 'Inter', sans-serif;
+}
+
+.day-nav-btn:hover {
+  border-color: #C9A84F;
+  color: #F4EFE7;
+}
+
+.day-nav-btn.primary {
+  background: #C9A84F;
+  border-color: #C9A84F;
+  color: #080808;
+  font-weight: 600;
+  box-shadow: 0 0 24px rgba(201,168,79,0.3);
+}
+
+.day-nav-btn.primary:hover {
+  background: #dbb85a;
+  box-shadow: 0 0 32px rgba(201,168,79,0.5);
+}
+
+.day-complete-card {
+  background: rgba(201,168,79,0.06);
+  border: 1px solid rgba(201,168,79,0.45);
+  border-radius: 28px;
+  padding: 28px 32px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.day-complete-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  color: #F4EFE7;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.day-complete-sub {
+  font-size: 13px;
+  color: #8B8275;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
